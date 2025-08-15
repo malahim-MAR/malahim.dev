@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.header {
+  background-color: #010101;
+  border: 2px solid rgba(255, 255, 255, 0.352);
+  margin: 0 auto;
+  width: auto;
+  /* max-width: 1800px; */
+  /* width: 100%; */
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.menu-list-item {
+  list-style: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+.menu-list-item a {
+  color: #fafafa;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  position: relative; /* Needed for underline positioning */
+}
+
+.menu-list-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* distance below text */
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.menu-list-item a:hover::after {
+  width: 100%;
+}
+
+.text-logo {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
