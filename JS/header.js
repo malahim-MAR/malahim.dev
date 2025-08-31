@@ -2,7 +2,7 @@ const header = document.getElementById("header");
 header.innerHTML = `
     <header class="header">
       <div>
-        <h3 class="text-logo">Malahim's Development</h3>
+        <h3 class="text-logo">Malahim Bin Haroon</h3>
       </div>
       
       <button class="mobile-menu-toggle" id="mobileMenuToggle">
@@ -26,7 +26,7 @@ header.innerHTML = `
       <div>
           <button class="global-btn">
             Connect With Us
-            <i class='fas fa-arrow-alt-circle-right' style='font-size:24px; color: white;'></i>
+          
           </button>
       </div>
     </header>`;

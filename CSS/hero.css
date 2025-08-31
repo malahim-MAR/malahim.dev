@@ -1,72 +1,97 @@
+/* Font */
 @font-face {
   font-family: "helvetica";
   src: url(../Assets/helvetica.ttf) format("truetype");
 }
 
+/* Hero Section */
 .hero {
-  /* background-image: url(../Assets/5.jpg); */
-  /* background-size: cover; */
-  height: 100vh;
-  width: 100%;
-  padding: 20px 0px;
+  background: linear-gradient(135deg, #000000 70%, #3d0066 100%);
+  color: #fff;
+  height: 90vh;
+  width: auto;
   display: flex;
-  align-content: center;
-  justify-content: space-between;
-  margin: 0 auto;
-
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1.5%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-content {
-  padding: 0 20px;
-  width: 70%;
+  max-width: 1000px;
 }
 
-
-.hero-heading-1 {
-  font-size: 100px;
-  line-height: 1em;
-  color: #cecece;
+.hero-heading {
+  font-size: 120px;
   font-weight: 500;
-  text-transform: uppercase;
-  font-family: "helvetica";
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #FEFFFD;
 }
 
-.hero-heading-2 {
-  font-size: 128px;
-  line-height: 0em;
-  color: #cecece;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "helvetica";
-}
-.hero-subheading{
-  
+.highlight {
+  color: #949494;
+  font-weight: 500;
+  /* Purple accent */
 }
 
-.hero-content span {
+.hero-subheading {
+  max-width: 800px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-subheading span {
+  background-color: #323230;
+  font-size: 14px;
+  padding: 6px 15px;
+  border-radius: 30px;
+  align-items: center;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.explore-btn {
+  background: transparent;
+  border: 2px solid #fff;
   color: #fff;
-  line-height: 1em;
-
-  text-transform: capitalize;
+  padding: 15px 35px;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.hero-media {
-  width: 30%;
+.explore-btn:hover {
+  background: white;
+  color: black;
 }
 
-.hero-media img {
-  width: 500px;
-  height: 700px;
-  object-fit: cover;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 62px;
+  .hero {
+    text-align: center;
+    justify-content: center;
+    padding: 0 20px;
   }
 
-  .hero-media img {
-    width: 100%;
-    height: auto;
+  .hero-heading {
+    font-size: 52px;
+  }
+
+  .hero-subheading {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 }

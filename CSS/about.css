@@ -1,0 +1,21 @@
+.about-me {
+    background: linear-gradient(48deg, #000000 70%, #3d0066 100%);
+    height: 100vh;
+    margin: 0;
+}
+
+.about-me-header {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.breadcrumbs {
+    color: #949494;
+}
+
+.about-me-heading {
+    color: #FEFFFD;
+    font-size: 36px;
+    max-width: 800px;
+    text-align: center;
+}

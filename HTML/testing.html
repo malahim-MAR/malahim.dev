@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime.js Text Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+      /* body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #000;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        overflow: hidden;
+      } */
+      .animated-text span {
+        display: inline-block;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animated-text">Hy, I’m Malahim – A Modern Dev</div>
+
+    <script>
+      // Wrap each letter in a span
+      const text = document.querySelector(".animated-text");
+      text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+      // Animate letters one by one
+      anime.timeline({ loop: false }).add({
+        targets: ".animated-text span",
+        opacity: [0, 1],
+        translateY: [50, 0],
+        easing: "easeOutExpo",
+        duration: 800,
+        delay: (el, i) => 50 * i,
+      });
+      // .add({
+      //   targets: ".text span",
+      //   opacity: [1, 0],
+      //   translateY: [0, -50],
+      //   easing: "easeInExpo",
+      //   duration: 800,
+      //   delay: (el, i) => 50 * i,
+      // });
+    </script>
+  </body>
+</html>

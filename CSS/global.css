@@ -22,3 +22,8 @@ button {
   display: flex;
   cursor: pointer;
 }
+
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+}
