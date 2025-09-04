@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -49,6 +49,137 @@
       //   duration: 800,
       //   delay: (el, i) => 50 * i,
       // });
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .services {
+      text-align: center;
+      padding: 100px 0;
+      background: black;
+      color: white;
+    }
+
+    .services-title {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .services-subtitle {
+      color: #aaa;
+      margin-bottom: 60px;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      overflow: hidden;
+      text-align: center;
+      transform: rotateY(15deg) rotateX(5deg);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      padding: 20px;
+    }
+
+    .service-card img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .service-card h3 {
+      margin-top: 15px;
+      font-size: 22px;
+    }
+
+    .service-card:hover {
+      transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Swiper styling */
+    .swiper {
+      width: 80%;
+      padding: 50px 0;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <section class="services">
+      <h2 class="services-title">Our Services</h2>
+      <p class="services-subtitle">
+        Discover our wide range of professional services.
+      </p>
+
+      <div class="swiper services-swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="service-card">
+              <img src="your-image1.jpg" alt="Litigation" />
+              <h3>Litigation</h3>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="service-card">
+              <img src="your-image2.jpg" alt="Real Estate" />
+              <h3>Real Estate</h3>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="service-card">
+              <img src="your-image3.jpg" alt="Business" />
+              <h3>Business</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- SwiperJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".services-swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        grabCursor: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 30,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+      });
     </script>
   </body>
 </html>

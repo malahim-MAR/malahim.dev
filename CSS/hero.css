@@ -5,10 +5,18 @@
 }
 
 /* Hero Section */
+.screen-1 {
+  scroll-snap-align: start;
+  height: 100vh;
+
+}
+
 .hero {
-  background: linear-gradient(135deg, #000000 70%, #3d0066 100%);
+  background: linear-gradient(135deg, #000000, #000000, #3d0066);
   color: #fff;
   height: 90vh;
+
+  /* was 90vh */
   width: auto;
   display: flex;
   align-items: center;
@@ -16,6 +24,7 @@
   padding: 0 1.5%;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  /* added */
 }
 
 .hero-content {

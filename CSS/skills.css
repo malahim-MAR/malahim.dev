@@ -1,0 +1,8 @@
+.skills {
+    background: linear-gradient(240deg, #000000 70%, #3d0066 100%);
+    height: 100vh;
+    margin: 0;
+    scroll-snap-align: start;
+    padding: 0px 1.5%;
+
+}
