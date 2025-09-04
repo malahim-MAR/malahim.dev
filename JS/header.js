@@ -15,7 +15,7 @@ header.innerHTML = `
         <nav class="menu" id="mobileMenu"> 
           <ul class="menu-list">
             <li class="menu-list-item"><a href="#about">About</a></li>
-            <li class="menu-list-item"><a href="#services">Services</a></li>
+            <li class="menu-list-item"><a href="#skills">Skills</a></li>
             <li class="menu-list-item"><a href="#portfolio">Portfolio</a></li>
             <li class="menu-list-item"><a href="#hire">Hire Me</a></li>
             <li class="menu-list-item"><a href="#blogs">Blogs</a></li>

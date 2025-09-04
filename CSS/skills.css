@@ -6,3 +6,59 @@
     padding: 0px 1.5%;
 
 }
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.skill-title {
+    color: white;
+}
+
+.skill-description {
+    color: white;
+}
+
+.skill-image i {
+    color: orangered;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+
+.skill-card {
+    background-color: rgba(255, 255, 255, 0.048);
+    backdrop-filter: blur(10px);
+
+    border: 2px solid rgba(255, 255, 255, 0.311);
+    border-radius: 15px;
+    padding: 20px 10px;
+    width: 350px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.skills-header {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    padding: 10px 50px;
+}
+
+.breadcrumbs {
+    color: #bcbcbc;
+    width: 20%;
+}
+
+.skills-heading {
+    color: #FEFFFD;
+    font-size: 36px;
+    text-align: center;
+    width: 80%;
+}
